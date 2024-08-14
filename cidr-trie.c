@@ -17,9 +17,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <arpa/inet.h>
-
+#include <stdint.h>
 #include "cidr-trie.h"
-
+typedef unsigned int uint;
+typedef unsigned char u_char;
 static trie_node_t *node_callc()
 {
 	trie_node_t *node = calloc(1, sizeof(*node));
